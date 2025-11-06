@@ -26,11 +26,11 @@
   </xacro:macro>
 
   <xacro:add_controller position="front"/>
-  <xacro:add_controller position="center"/>
+  <!-- <xacro:add_controller position="center"/> -->
   <xacro:add_controller position="rear"/>
 
   <xacro:remove_friction position="front"/>
-  <xacro:remove_friction position="rear"/>
+  <!-- <xacro:remove_friction position="rear"/> -->
 
   <xacro:depth_camera name="camera_front"/>
   <xacro:lidar_2d name="laser"/>
