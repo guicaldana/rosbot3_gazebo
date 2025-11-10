@@ -4,6 +4,7 @@
   Model primitives.
 
   Author: Helio Perroni Filho
+  Editor: Guilherme Teixeira Caldana
 -->
 
 <robot name="rosbot3" xmlns:xacro="http://www.ros.org/wiki/xacro">
@@ -25,12 +26,13 @@
     />
   </xacro:macro>
 
+  <!-- Controllers for both axles -->
   <xacro:add_controller position="front"/>
-  <!-- <xacro:add_controller position="center"/> -->
   <xacro:add_controller position="rear"/>
 
+  <!-- Removing friction for front axle-->
   <xacro:remove_friction position="front"/>
-  <!-- <xacro:remove_friction position="rear"/> -->
+  
 
   <xacro:depth_camera name="camera_front"/>
   <xacro:lidar_2d name="laser"/>
